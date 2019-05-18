@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: $font-primary;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: $font-primary;
+}
+
+.heading-secondary {
+    font-size: 15rem;
+
+    span {
+        color: orange;
+    }
+
+    @include respond(phone) {
+        font-size: 9rem;
+        padding: 2rem 0;
+    }
+}

@@ -1,5 +1,18 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+//ABSTRACTS
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-img {
-    height: 5rem;
-}
+//BASE
+@import "base/base";
+@import "base/fonts";
+
+//COMPONENTS
+@import "components/bg-video";
+@import "components/card";
+
+//LAYOUT
+@import "layout/grid";
+@import "layout/portfolio";
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";

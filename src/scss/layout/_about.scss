@@ -1,0 +1,24 @@
+.section-about {
+    height: 120rem;
+    background: $color-secondary;
+
+    .heading-secondary {
+        text-align: right;
+        margin-top: 4rem;
+        color: #333;
+
+        @include respond(tab-land) {
+            margin-right: 2rem;
+        }
+    }
+
+    .text:first-child {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+}

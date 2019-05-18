@@ -4,49 +4,270 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/main.css" />
         <title>Miguel Osorio | Web Developer</title>
     </head>
     <body>
-        <!-- NAVIGATION -->
-        <nav
-            class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
-            id="main-nav"
-        >
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="/img/owl-02-512.png" alt="Logo" />
-                </a>
-                <button
-                    class="navbar-toggler"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-2">
-                            <a href="#home" class="nav-link text-white">Home</a>
+        <section class="section-about">
+            <div class="row">
+                <h2 class="heading-secondary">About<br />Me<span>:</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <p class="text">
+                        My name is Miguel Osorio.<br />I'm a Full-Stack Web
+                        Developer based in Prague.
+                    </p>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque iste quibusdam quidem quia sapiente laborum dolor
+                        ea. Odit velit, expedita quod magnam perferendis enim
+                        earum numquam sequi similique aliquam dolore assumenda,
+                        exercitationem reprehenderit. Qui accusantium
+                        voluptatum, ipsa reiciendis delectus quisquam aspernatur
+                        necessitatibus deserunt quam incidunt voluptate rerum
+                        laboriosam eos officiis.
+                    </p>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span
+                                    class="card__heading-span card__heading-span--2"
+                                    >Frontend</span
+                                >
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>HTML5, CSS3</li>
+                                    <li>SASS, LESS</li>
+                                    <li>Bootstrap, Materialize</li>
+                                    <li>JavaScript, React</li>
+                                    <li>Gulp, NPM, Webpack</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="card__side card__side--back card__side--back-2"
+                        >
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span
+                                    class="card__heading-span card__heading-span--2"
+                                    >Backend</span
+                                >
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>PHP, Node.js</li>
+                                    <li>Laravel, Express.js</li>
+                                    <li>Composer, NPM, Yarn</li>
+                                    <li>MySQL/MariaDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="section-portfolio" id="portfolio">
+            <!-- <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/bg-video.mp4" type="video/mp4" />
+                    Your browser is not supported!
+                </video>
+            </div> -->
+            <h2 class="heading-secondary">Portfolio<span>:</span></h2>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="portfolio-box">
+                        <i class="portfolio-box__icon fas fa-code"> </i>
+                        <h3 class="portfolio-box__heading">
+                            Project 1
+                        </h3>
+                        <p class="portfolio-box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Perferendis cum nobis dolor veniam quasi
+                            deserunt ad laboriosam eum magni consequatur quaerat
+                            sequi, illo, officia voluptate? Ullam iste repellat,
+                            error animi consequatur labore distinctio dolore
+                            doloribus minima excepturi officiis sint voluptate.
+                        </p>
+                        <a href="#"
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-globe fa-3x"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-code-branch fa-3x"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="portfolio-box">
+                        <i class="portfolio-box__icon fas fa-code"> </i>
+                        <h3 class="portfolio-box__heading">
+                            Project 2
+                        </h3>
+                        <p class="portfolio-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Omnis unde rem nulla pariatur id dolores
+                            corrupti autem praesentium qui, laboriosam culpa at
+                            voluptate aliquam sed eius iusto reiciendis delectus
+                            laudantium molestias dignissimos quasi velit quis!
+                            Officia placeat repellendus veritatis nostrum?
+                        </p>
+                        <a href="#"
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-globe fa-3x"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-code-branch fa-3x"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="portfolio-box">
+                        <i class="portfolio-box__icon fas fa-code"> </i>
+                        <h3 class="portfolio-box__heading">
+                            Project 3
+                        </h3>
+                        <p class="portfolio-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit aut magni nesciunt nulla magnam tempora
+                            quasi a officia corporis debitis non quam
+                            cupiditate, nemo fugit ipsam? Perspiciatis officia
+                            molestiae nihil ad modi consequuntur sed ullam
+                            voluptatum nisi quam, dignissimos nobis?
+                        </p>
+                        <a href=""
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-globe fa-3x"
+                            ></i
+                        ></a>
+                        <a href=""
+                            ><i
+                                class="portfolio-box__icon--bottom fas fa-code-branch fa-3x"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="section-contact" id="contact">
+            <div class="row">
+                <h2 class="heading-secondary">Contact<br />Me<span>:</span></h2>
+            </div>
+            <div class="row">
+                <div class="contact">
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <input
+                                    type="text"
+                                    class="form__input"
+                                    placeholder="Name"
+                                    id="name"
+                                    required
+                                />
+                                <label for="name" class="form__label"
+                                    >Name</label
+                                >
+                            </div>
+
+                            <div class="form__group">
+                                <input
+                                    type="email"
+                                    class="form__input"
+                                    placeholder="Email"
+                                    id="email"
+                                    required
+                                />
+                                <label for="email" class="form__label"
+                                    >Email</label
+                                >
+                            </div>
+
+                            <div class="form__group">
+                                <textarea
+                                    name="message"
+                                    ,
+                                    class="form__message"
+                                    ,
+                                    placeholder="Message"
+                                    ,
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="form__button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__social-links">
+                <a href="#"><i class="fab fa-github fa-7x"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in fa-7x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-7x"></i></a>
+            </div>
+            <div class="row">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#home" class="footer__link">Home</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a href="#about-head-section" class="nav-link text-white"
-                                >About Me</a
-                            >
+                        <li class="footer__item">
+                            <a href="#about" class="footer__link">About Me</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a href="#portfolio-head-section" class="nav-link text-white"
+                        <li class="footer__item">
+                            <a href="#portfolio" class="footer__link"
                                 >Portfolio</a
                             >
                         </li>
-                        <li class="nav-item px-2">
-                            <a href="#contact-head-section" class="nav-link text-white"
-                                >Contact</a
+                        <li class="footer__item">
+                            <a href="#contact" class="footer__link"
+                                >Contact Me</a
                             >
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+            <div class="row">
+                <div class="footer__copyright">
+                    <span>Miguel Osorio &copy; 2019</span>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
