@@ -18,6 +18,10 @@
         @media screen and (max-width: 340px) {
             padding: 3rem;
         }
+
+        @include respond(tab-land) {
+            margin-top: 0;
+        }
     }
 
     & > * {

@@ -1,6 +1,20 @@
 .section-about {
-    height: 120rem;
+    min-height: 120rem;
     background: $color-secondary;
+
+    .row:last-child {
+        @include respond(tab-land) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        // .col-1-of-2:last-child {
+        //     display: flex;
+        //     flex-flow: row wrap;
+        //     justify-content: center;
+        // }
+    }
 
     .heading-secondary {
         text-align: right;
@@ -12,13 +26,19 @@
         }
     }
 
-    .text:first-child {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
+    .col-1-of-2:first-child {
+        .text:not(last-child) {
+            margin-bottom: 2rem;
+        }
 
-    .text {
-        font-size: 1.7rem;
-        text-align: justify;
+        .text {
+            font-size: 1.8rem;
+            letter-spacing: 0.1rem;
+            text-align: justify;
+        }
+
+        @include respond(tab-land) {
+            margin-left: 2rem;
+        }
     }
 }

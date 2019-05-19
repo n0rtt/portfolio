@@ -1,0 +1,43 @@
+.navigation {
+    background: $color-secondary;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    @include respond(tab-land) {
+        padding: 0 3rem;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+
+    &__logo img {
+        height: 6rem;
+    }
+
+    &__navbar {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row nowrap;
+        list-style: none;
+        font-size: 1.6rem;
+
+        @include respond(tab-port) {
+            flex: 0 0 50%;
+        }
+
+        @include respond(phone) {
+            flex: 0 0 70%;
+        }
+    }
+
+    &__link {
+        color: #333;
+    }
+}

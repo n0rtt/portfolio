@@ -14,7 +14,63 @@
         <title>Miguel Osorio | Web Developer</title>
     </head>
     <body>
-        <section class="section-about">
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+            <div class="row">
+                <div class="nav">
+                    <div class="nav__logo">
+                        <img src="img/logo.png" alt="Logo" />
+                    </div>
+                    <ul class="nav__navbar">
+                        <li><a class="nav__link" href="#home">Home</a></li>
+                        <li>
+                            <a class="nav__link" href="#about">About me</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HOME -->
+        <header class="section-home" id="home">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/bg-video.mp4" type="video/mp4" />
+                    Your browser is not supported!
+                </video>
+            </div>
+            <div class="row">
+                <div class="home">
+                    <div class="home__dark-overlay">
+                        <div class="home__content">
+                            <div class="col-1-of-2 respond-first">
+                                <img
+                                    class="home__content__image"
+                                    src="img/photo.jpg"
+                                    alt="Miguel Osorio"
+                                />
+                            </div>
+                            <div class="col-1-of-2 respond-second">
+                                <h1 class="home__content__heading--primary">
+                                    Hello<span>.</span><br />I am<br />
+                                    Miguel<span>.</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT ME -->
+        <section class="section-about" id="about">
             <div class="row">
                 <h2 class="heading-secondary">About<br />Me<span>:</span></h2>
             </div>
@@ -34,14 +90,23 @@
                         necessitatibus deserunt quam incidunt voluptate rerum
                         laboriosam eos officiis.
                     </p>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ut itaque repellendus mollitia quo magnam aliquam
+                        recusandae aliquid hic, modi consectetur earum, non
+                        consequatur fugit error est amet ad veniam id deserunt,
+                        cum debitis! Quam ducimus voluptates dolorum explicabo
+                        quos quasi laboriosam omnis neque ea corporis, qui,
+                        officia, in voluptatibus suscipit.
+                    </p>
                 </div>
                 <div class="col-1-of-2">
                     <div class="card">
                         <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
+                            <div class="card__picture card__picture--front">
                                 &nbsp;
                             </div>
-                            <h4 class="card__heading">
+                            <h4 class="card__heading card__heading--front">
                                 <span
                                     class="card__heading-span card__heading-span--2"
                                     >Frontend</span
@@ -57,13 +122,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div
-                            class="card__side card__side--back card__side--back-2"
-                        >
-                            <div class="card__picture card__picture--2">
+                        <div class="card__side card__side--back">
+                            <div class="card__picture card__picture--back">
                                 &nbsp;
                             </div>
-                            <h4 class="card__heading">
+                            <h4 class="card__heading card__heading--back">
                                 <span
                                     class="card__heading-span card__heading-span--2"
                                     >Backend</span
@@ -85,12 +148,6 @@
 
         <!-- PORTFOLIO -->
         <section class="section-portfolio" id="portfolio">
-            <!-- <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/bg-video.mp4" type="video/mp4" />
-                    Your browser is not supported!
-                </video>
-            </div> -->
             <h2 class="heading-secondary">Portfolio<span>:</span></h2>
             <div class="row">
                 <div class="col-1-of-3">

@@ -24,7 +24,7 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 1rem;
+    // 
     font-family: $font-primary;
 
     @include respond(tab-port) {
@@ -51,7 +51,7 @@ input {
     font-size: 15rem;
 
     span {
-        color: orange;
+        color: $color-tertiary;
     }
 
     @include respond(phone) {
