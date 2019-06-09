@@ -1,30 +1,42 @@
 .home {
     height: 100vh;
-    //
+    overflow: hidden;
 
     &__dark-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 100vh;
         background: rgba(0, 0, 0, 0.5);
-        margin-top: -10rem;
     }
 
     &__content {
+        height: 100vh;;
         display: flex;
         align-items: center;
         padding-top: 25rem;
+        padding-bottom: 5rem;
+
+        @include respond(tab-land) {
+            padding-top: 10rem;
+        }
+
+        @include respond(tab-land) {
+            justify-content: center;
+            align-content: center;
+        }
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
 
         &__image {
-            display: flex;
-            height: 30rem;
-            width: 30rem;
+            height: 35rem;
+            width: 35rem;
             border-radius: 50%;
             object-fit: cover;
             object-position: top;
-            margin-left: 30rem;
+            margin-left: 20rem;
 
             @include respond(tab-land) {
                 height: 40rem;
@@ -41,25 +53,20 @@
             @include respond(phone) {
                 height: 20rem;
                 width: 20rem;
-                margin-left: 0;
+                margin: 0;
             }
         }
 
         &__heading--primary {
-            font-size: 15rem;
+            font-size: 10rem;
             color: #fff;
 
             span {
                 color: $color-tertiary;
             }
 
-            @include respond(tab-port) {
-                font-size: 12rem;
-            }
-
             @include respond(phone) {
-                font-size: 8rem;
-                margin-left: 3rem;
+                font-size: 10rem;
             }
         }
 
@@ -72,6 +79,7 @@
             @include respond(phone) {
                 display: flex;
                 justify-content: center;
+                padding-top: 6rem;
             }
         }
 
@@ -82,8 +90,8 @@
             }
         }
 
-        @include respond(tab-land) {
-            flex-direction: column;
-        }
+            // @include respond(tab-port) {
+            //     flex-direction: column;
+            // }
     }
 }
